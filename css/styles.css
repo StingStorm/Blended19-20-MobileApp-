@@ -1,13 +1,13 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
 ol {
-    padding: 0;
-    list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
 body,
@@ -19,19 +19,46 @@ p,
 ul,
 ol,
 li {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    display: block;
+  display: block;
 }
 
 input,
 button,
 textarea {
-    font: inherit;
+  font: inherit;
+}
+.video-background {
+  background-color: #06071b;
+  padding: 60px 16px;
+}
+.video-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.video-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.phone-screen-img {
+  width: 478px;
+  height: 234px;
+}
+.phone-body-img {
+  width: 501px;
+  height: 261px;
 }
