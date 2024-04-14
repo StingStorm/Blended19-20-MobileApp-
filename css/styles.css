@@ -1,13 +1,13 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
 ol {
-    padding: 0;
-    list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
 body,
@@ -19,19 +19,27 @@ p,
 ul,
 ol,
 li {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    display: block;
+  display: block;
 }
 
 input,
 button,
 textarea {
-    font: inherit;
+  font: inherit;
+}
+
+.page-title {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48.41px;
+  text-align: left;
 }
