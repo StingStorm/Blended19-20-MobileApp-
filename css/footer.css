@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+input,
+button,
+textarea {
+  font: inherit;
+}
+/* Footer */
+.page-footer{
+  background: #06071b;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+.footer-title {
+  font-size: 24px;
+}
+.footer-subtitle {
+  font-weight: 500;
+  font-size: 24px;
+}
+.footer-desc {
+  font-weight: 500;
+  font-size: 16px;
+}
+.footer-list-link:hover,
+.footer-list-link:focus,
+.footer-list-link:active 
+{
+background: linear-gradient(99deg, #00c5eb 100%, #b544fe 0%);
+}
+
+.contact-link {
+  font-weight: 500;
+  font-size: 16px;
+  color: inherit;
+}
+.contact-link:hover,
+.contact-link:active,
+.contact-link:focus {
+  color: #00c5eb;
+}
+.footer-button {
+  background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+  font-weight: 700;
+  font-size: 16px;
+  color: inherit;
+}
+
+.footer-button:hover,
+.footer-button:active,
+.footer-button:focus {
+  background: linear-gradient(99deg, #00c5eb 100%, #b544fe 0%);
+}
+.footer-text {
+  font-weight: 500;
+  font-size: 14px;
+}
