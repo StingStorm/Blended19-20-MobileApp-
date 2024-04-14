@@ -28,10 +28,36 @@ a {
 
 img {
     display: block;
+		width: 264;
+		height: 260;
 }
 
 input,
 button,
 textarea {
     font: inherit;
+}
+
+.team-title{
+		font-family: "Inter", sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		color: #000;
+		text-transform: uppercase;
+		margin-bottom: 80px;
+		text-align: center;
+}
+
+.team-text {
+		font-family: "Inter", sans-serif;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.5;
+		color: #000;
+		margin-bottom: 56px;
+		text-align: center;
+}
+
+.team-list-description {
+  
 }
