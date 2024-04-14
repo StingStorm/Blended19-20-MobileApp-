@@ -38,7 +38,7 @@ textarea {
     font: inherit;
 }
 
-.team-title{
+.section-title{
 		font-family: "Inter", sans-serif;
 		font-weight: 700;
 		font-size: 24px;
@@ -48,7 +48,7 @@ textarea {
 		text-align: center;
 }
 
-.team-text {
+.section-description {
 		font-family: "Inter", sans-serif;
 		font-weight: 500;
 		font-size: 16px;
