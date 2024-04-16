@@ -1,40 +1,54 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+/* body {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+    background-color: #fff;
 }
 
-ul,
-ol {
-    padding: 0;
-    list-style: none;
+.container {
+    max-width: 1280px;
+    padding: 0 16px;
+    margin: 0 auto;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li {
-    margin: 0;
+
+.section-title {
+
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+    text-align: center;
 }
 
-a {
-    text-decoration: none;
+
+.section-descr {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
 }
 
-img {
-    display: block;
+.section-subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 12px;
 }
 
-input,
-button,
-textarea {
-    font: inherit;
+.card-descr {
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
 }
+
+.section {
+    width: 100%;
+    background-color: #fff;
+} */
+
+/* ====== Modal ====== */
 
 .backdrop {
     position: fixed;
@@ -42,7 +56,17 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .modal {
@@ -56,12 +80,39 @@ textarea {
     padding: 32px 40px;
     background-color: #06071B;
     color: #fff;
-    font-size: 16px;
+    line-height: 1.5;
 }
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.close-btn .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    fill: #fff;
+}
+
+.modal .section-title {
+    color: inherit;
+    margin-bottom: 28px;
+    line-height: 1.17;
+}
+
 .download-plan-list {
     display: flex;
     justify-content: center;
     gap: 22px;
+
+    margin-bottom: 32px;
 }
 
 .download-plan-item {
@@ -71,37 +122,174 @@ textarea {
     gap: 20px;
 
     width: calc((100% - 22px) / 2);
-    padding: 28px 22px;
-
-    border: 2px solid rgb(181, 68, 254);
+    padding: 28px 25px 48px 22px;
+    background: black;
     border-radius: 6px;
-    /* border-color:  */
+    cursor: pointer;
+    position: relative;    
+    transition: background 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.download-plan-item::before {
+    content: "";
+    background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+    border-radius: 6px;
+
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+
+
+    transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.download-plan-item:hover {
+background: transparent;
+}
+
 
 .icon {
     fill: #fff;
 }
 
-.section-subtitle {}
+.download-plan-title {
+    font-size: 16px;
+    font-weight: 500;
+}
 
-.plan-benefits {}
+.plan-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-self: flex-start;
+}
 
-.plan-benefits-item {}
+.plan-benefits-item {
+    font-size: 14px;
+    line-height: 1.71;
+    font-weight: 400;
+    
+    margin-left: 18px;
+    position: relative;
+}
 
-.section-descr {}
-
-.app-features {}
-
-.app-features-list {}
-
-.app-features-item {}
-
-.app-features-name {}
-
-.app-features-value {}
-
-.app-features-icon {
+.list-marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    top: 5px;
+    left: -18px;
+    
     fill: #fff;
 }
 
-.modal-btn {}
+.section-descr {
+    color: inherit;
+
+    max-width: 448px;
+    margin-bottom: 32px;
+}
+
+.app-features {
+    display: flex;
+    gap: 2px;
+
+    margin-bottom: 32px;
+    background-image: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+    border-radius: 6px;
+    padding: 2px;
+}
+
+.app-features-list:first-child{
+    border-radius: 6px 0 0 6px;
+}
+
+.app-features-list:last-child {
+    border-radius: 0 6px 6px 0;
+}
+
+.app-features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: calc((100% - 2px) / 2);
+    background-color: #06071B;
+    padding: 20px;
+}
+
+.app-features-item {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: normal;
+
+    margin-left: 36px;
+    position: relative;
+}
+
+.app-features-name {
+    margin-bottom: 4px;
+}
+
+.app-features-value {
+    color: #1ab9fd;
+}
+
+.app-features-value:hover {
+    text-decoration: underline;
+}
+
+.app-features-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%;
+    left: -36px;
+    transform: translateY(-50%);
+    fill: #fff;
+}
+
+.download-btn {
+    display: block;
+    margin: 0 auto;
+    width: 196px;
+    min-height: 38px;
+    position: relative;
+    
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.download-btn::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+
+    border-radius: 5px;
+    background-image: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+    z-index: -1;
+}
+
+.download-btn:hover,
+.download-btn:focus {
+    background-color: #06071B;
+}
+
+.download-btn:active {
+    background-color: transparent;
+}
