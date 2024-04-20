@@ -22,30 +22,32 @@ li {
   margin: 0;
 }
 
-h2 {
+body {
   font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
+}
+
+h2.section-title {
   font-weight: 700;
   font-size: 24px;
-  color: #ffffff;
-  margin-bottom: 80px;
-  text-align: center;
-  align-items: center;
+  color: #000;
 }
 
-h3 {
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  color: #ffffff;
-  margin-bottom: 12px;
+h3.section-subtitle {
+	font-weight: 700;
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 12px;
 }
 
-p {
-  font-weight: 500;
-  font-size: 14px;
+p.card-descr {
+	font-size: 14px;
+	color: #fff;
   line-height: 1.71;
-  text-align: center;
-  color: #ffffff;
 }
 
 a {
@@ -65,19 +67,23 @@ textarea {
 .section-testimonial {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .container {
   max-width: 1280px;
-  padding: 40px 16px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
 .container-testimonial {
-  padding: 80px 197px;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .customer-header {
-  color: #000000;
+  text-align: center;
+  align-items: center;
   margin-bottom: 40px;
 }
 
@@ -90,19 +96,18 @@ textarea {
   margin: 0 auto 54px;
 }
 
-.customer-name {
+h3.customer-name {
   color: #000000;
 }
 
-.customer-company {
-  color: #000000;
+p.customer-company {
+  color: #000;
   margin-bottom: 40px;
 }
 
-.customer-opinion {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000000;
+p.customer-opinion {
+  max-width: 886px;
+  margin: 0 auto;
 }
 
 .slick-dots {
