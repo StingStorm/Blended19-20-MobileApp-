@@ -38,15 +38,15 @@ h2.section-title {
 }
 
 h3.section-subtitle {
-	font-weight: 700;
-	font-size: 18px;
-	color: #fff;
-	margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 12px;
 }
 
 p.card-descr {
-	font-size: 14px;
-	color: #fff;
+  font-size: 14px;
+  color: #fff;
   line-height: 1.71;
 }
 
@@ -68,6 +68,9 @@ textarea {
   display: flex;
   justify-content: center;
   text-align: center;
+  background-image: url(../images/testimonial/group-vectors-customers.png);
+  background-size: cover;
+  background-position-y: 55%;
 }
 
 .container {
