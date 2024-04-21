@@ -35,11 +35,3 @@ button,
 textarea {
   font: inherit;
 }
-
-.page-title {
-  font-family: "Inter", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48.41px;
-  text-align: left;
-}
