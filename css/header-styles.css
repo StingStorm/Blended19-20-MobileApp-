@@ -1,11 +1,9 @@
 body {
   font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  background-color: #06071b;
-  padding: 60px 16px;
   color: #ffffff;
+  background-color: #06071b;
+  width: 1280px;
+  height: 684px;
 }
 
 ul,
@@ -19,7 +17,12 @@ a {
 }
 
 .page-nav {
-  background-color: #00c5eb4d;
+  backdrop-filter: blur(35px);
+  background: linear-gradient(
+    99deg,
+    rgba(0, 197, 235, 0.3) 0%,
+    rgba(181, 68, 254, 0.3) 100%
+  );
 }
 
 .nav-logo {
@@ -63,5 +66,5 @@ a {
   line-height: 19.36px;
   text-align: left;
   color: #ffffff;
-  background-color: #00c5eb;
+  background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
 }
