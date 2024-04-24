@@ -34,34 +34,73 @@ button,
 textarea {
   font: inherit;
 }
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+
+
 /* Footer */
+.footer-section {
+    padding-top: 80px;
+    padding-right: 16px;
+    padding-bottom: 139px;
+    padding-left: 16px;
+    border-bottom: 1px solid #ffffff;
+    max-width: 1280px;
+    margin-top: 0;
+}
 .page-footer{
   background: #06071b;
   color: #ffffff;
-  font-family: "Inter", sans-serif;
+  max-width: 1280px;
+
 }
 .footer-title {
-  font-size: 24px;
+    font-size: 24px;
+    margin-bottom: 80px;
+    text-align: center;
+
 }
 .footer-subtitle {
   font-weight: 500;
   font-size: 24px;
+  margin-bottom: 20px;
+ 
 }
 .footer-desc {
   font-weight: 500;
   font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
+.footer-list {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 14px;
+}
+
 .footer-list-link:hover,
 .footer-list-link:focus,
 .footer-list-link:active 
 {
 background: linear-gradient(99deg, #00c5eb 100%, #b544fe 0%);
 }
-
+.contact-block {
+  font-style: inherit;
+}
 .contact-link {
   font-weight: 500;
   font-size: 16px;
   color: inherit;
+}
+.contact-link:first-child {
+  margin-bottom: 12px;
 }
 .contact-link:hover,
 .contact-link:active,
@@ -72,7 +111,20 @@ background: linear-gradient(99deg, #00c5eb 100%, #b544fe 0%);
   background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
   font-weight: 700;
   font-size: 16px;
-  color: inherit;
+  border-radius: 5px;
+    width: 181px;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+border: none;
+padding: 11px 59px 12px;
+margin-left: auto;
+margin-right: 0;
+margin-bottom: 79px;
+min-width: 181px;
+font-family: inherit;
+display: block;
+
 }
 
 .footer-button:hover,
@@ -83,4 +135,8 @@ background: linear-gradient(99deg, #00c5eb 100%, #b544fe 0%);
 .footer-text {
   font-weight: 500;
   font-size: 14px;
+  padding-top: 22px;
+  padding-bottom: 21px;
+  padding-left: 16px;
 }
+
