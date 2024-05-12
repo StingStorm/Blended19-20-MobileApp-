@@ -1,14 +1,8 @@
-body {
-  font-family: "Inter", sans-serif;
-  color: #ffffff;
-  background-color: #06071b;
-  width: 1280px;
-  height: 684px;
-}
-
 ul,
 ol {
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -16,55 +10,132 @@ a {
   text-decoration: none;
 }
 
-.page-nav {
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  background-color: #06071b;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+/* ---HEADER--- */
+.page-header {
   backdrop-filter: blur(35px);
   background: linear-gradient(
     99deg,
     rgba(0, 197, 235, 0.3) 0%,
     rgba(181, 68, 254, 0.3) 100%
   );
+  margin-top: 34px;
+}
+
+.header-container {
+  display: flex;
+  width: 1280px;
+  height: 72px;
+}
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .nav-logo {
+  display: flex;
   color: #ffffff;
   font-size: 28px;
   font-weight: 400;
-  line-height: 33.89px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 0px;
 }
 
 .menu-link {
+  display: block;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14.52px;
   color: #ffffff;
+  padding-top: 29px;
+  padding-bottom: 28px;
 }
 
-.title {
+/* ---HERO--- */
+.hero-container {
+  padding-top: 145px;
+}
+
+.hero-title {
   font-size: 40px;
   font-weight: 700;
-  line-height: 48.41px;
   text-align: left;
+  margin-bottom: 12px;
 }
 
-.section-title {
+.hero-title-item {
   font-size: 20px;
   font-weight: 700;
-  line-height: 24.2px;
   text-align: left;
+  margin-bottom: 28px;
 }
 
-.list {
-  font-size: 14px;
+.hero-list {
   font-weight: 400;
-  line-height: 16.94px;
-  text-align: left;
+  font-size: 14px;
+  margin-bottom: 62px;
+  display: flex;
+  gap: 14px;
+  flex-direction: column;
 }
 
-.button {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 19.36px;
-  text-align: left;
-  color: #ffffff;
+.list-item {
+  padding-left: 38px;
+}
+
+.button-title {
+  min-width: 200px;
+  border-radius: 5px;
+  width: 200px;
+  height: 42px;
   background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.button-title:hover,
+.button-title:focus {
+  background: #06071b;
+  border: 1px solid;
+  border-image-source: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+  border-image-slice: 1;
+  box-shadow: 5px;
 }

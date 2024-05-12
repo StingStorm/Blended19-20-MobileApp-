@@ -4,37 +4,51 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MobileApp</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/header-styles.css" />
-    <title>MobileApp</title>
 </head>
 
 <body>
     <!-- HEADER -->
-    <header>
-        <nav class="page-nav">
-            <a class="nav-logo" href="./header.html">Mobileapp</a>
-            <ul>
-                <li><a class="menu-link" href="./header.html">HOME</a></li>
-                <li><a class="menu-link" href="#features">FEATURES</a></li>
-                <li><a class="menu-link" href="#team">TEAM</a></li>
-                <li><a class="menu-link" href="#testimonials">TESTIMONIALS</a></li>
-                <li><a class="menu-link" href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
+    <header class="page-header">
+        <div class="container header-container">
+            <nav class="page-nav">
+                <a class="nav-logo" href="./header.html">Mobileapp</a>
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a class="menu-link" href="./header.html">HOME</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#features">FEATURES</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#team">TEAM</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#testimonials">TESTIMONIALS</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- HERO -->
     <section>
-        <h1 class="title">Introducing Mobileapp</h1>
-        <h2 class="section-title">Download our mobile app today!</h2>
-        <ul>
-            <li class="list">Real-time updates and notifications for timely information</li>
-            <li class="list">Robust analytics and reporting for data-driven insights</li>
-            <li class="list">Offline capabilities for uninterrupted use</li>
-        </ul>
-        <button class="button" type="button">Download</button>
+        <div class="container hero-container">
+            <h1 class="hero-title">Introducing Mobileapp</h1>
+            <h2 class="hero-title-item">Download our mobile app today!</h2>
+            <ul class="hero-list">
+                <li class="list-item">Real-time updates and notifications for timely information</li>
+                <li class="list-item">Robust analytics and reporting for data-driven insights</li>
+                <li class="list-item">Offline capabilities for uninterrupted use</li>
+            </ul>
+            <button class="button-title" type="button">Download</button>
+        </div>
     </section>
 
     <!--  VISUAL PART -->
